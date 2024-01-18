@@ -1,0 +1,26 @@
+body{
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1B1C21;
+}
+*{
+    box-sizing: border-box;
+}
+*:focus-within{
+    outline-color: rgb(255, 62, 121);
+}
+h1, h2, h3 {
+    margin: 0;
+}
+
+button{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+}
