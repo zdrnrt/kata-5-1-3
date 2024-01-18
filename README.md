@@ -1,5 +1,5 @@
 # Практическая задача 5.1.3
 ## Страница GitHub Pages: [#](#)
-1. **Исходник html** - []()
-1. **Стили в scss** - []()
-1. **Стили в css** - [link]()
+1. **Исходник html** - [https://github.com/zdrnrt/kata-5-1-3/blob/master/src/index.html](https://github.com/zdrnrt/kata-5-1-3/blob/master/src/index.html)
+1. **Стили в scss** - [https://github.com/zdrnrt/kata-5-1-3/tree/master/src/scss](https://github.com/zdrnrt/kata-5-1-3/tree/master/src/scss)
+1. **Стили в css** - [https://github.com/zdrnrt/kata-5-1-3/blob/master/app/css/main.css](https://github.com/zdrnrt/kata-5-1-3/blob/master/app/css/main.css)
