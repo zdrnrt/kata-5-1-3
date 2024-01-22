@@ -27,8 +27,30 @@
         }
     }
 }
+
+.brand-nav{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    padding-top: 1rem;
+    &__btn{
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #DDDDDD;
+        transition: 0.3s ease;
+        &--active{
+            background-color: #B5B6BC;
+        }
+    }
+}
+
 .brand-list{
+    position: relative;
     background: linear-gradient(270deg, #F8F8F8 0%, #FFF 98.61%);
+    overflow: hidden;
     // @media screen and (min-width: 768px) and (max-width: 1119px) {
     //     &--open &__slider .brand-list__item:nth-child(n + 7){
     //         display: block;
@@ -36,6 +58,18 @@
     // }
     // @media screen and (min-width: 1120px) {
     // }
+    @media screen and (max-width: 767px) {
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0.5rem;
+            right: 0rem;
+            z-index: 5;
+            width: 24px;
+            height: 80px;
+            background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%);
+        }
+    }
     &--open &__slider .brand-list__item:nth-child(n){
         display: block;
     }
@@ -46,6 +80,7 @@
         display: block;
     }
     &__slider{
+        
         @media screen and (min-width: 768px) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -68,8 +103,18 @@
         }
     }
     &__item{
+        transition: 0.3s all;
+        &.swiper-slide-active{
+            max-width: 240px;
+        }
         @media screen and (min-width: 768px) {
+            max-width: unset;
             flex-basis: calc(33% - 1rem);
+        }
+    }
+    &__nav{
+        @media screen and (min-width: 768px) {
+            display: none;
         }
     }
     &__control{
@@ -89,7 +134,7 @@
     border: 1px solid #EAEAEA;
     background-color: #fff;
     border-radius: 6px;
-    transition: 0.3s;
+    transition: 0.3s all;
     &:hover{
         .brand-item__circle{
             fill: #FF3E79;
